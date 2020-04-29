@@ -1,8 +1,10 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
 
-<web-app>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="2.5"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
 
   <display-name>Archetype Created Web Application</display-name>
   <!--加载spring相关配置文件（非spring-mvc-servlet.xml,该文件在下面的配置中进行加载） -->
@@ -54,7 +56,9 @@
 
   <!-- 设置欢迎页面（默认主页） -->
   <welcome-file-list>
-    <welcome-file>/index.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+
+    <welcome-file>./index.jsp</welcome-file>
   </welcome-file-list>
 
   <!--设置session超时时间，单位分钟，目前设置超时时间为10小时-->

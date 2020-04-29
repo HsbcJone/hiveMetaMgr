@@ -266,11 +266,19 @@
         </dependency>
 
         <!--postgresql -->
-        <dependency>
+     <!--   <dependency>
             <groupId>postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>9.1-901-1.jdbc4</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.jumpmind.symmetric.jdbc/postgresql -->
+        <dependency>
+            <groupId>org.jumpmind.symmetric.jdbc</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>9.2-1002-jdbc4</version>
+            <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
@@ -375,10 +383,16 @@
             <artifactId>dom4j</artifactId>
             <version>1.7-20060614</version>
         </dependency>
-        <dependency>
+     <!--   <dependency>
             <groupId>com.oracle</groupId>
             <artifactId>ojdbc6</artifactId>
-            <version>11.2.0.2</version>
+            <version>11.2.0.3</version>
+        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/com.oracle.ojdbc/ojdbc8 -->
+        <dependency>
+            <groupId>com.oracle.ojdbc</groupId>
+            <artifactId>ojdbc8</artifactId>
+            <version>19.3.0.0</version>
         </dependency>
         <dependency>
             <groupId>com.belerweb</groupId>
